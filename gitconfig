@@ -1,0 +1,13 @@
+[user]
+  name = "Anna Cruz"
+  email = "anna.cruz@gmail.com"
+[color]
+  status = auto
+  ui = auto
+  branch = auto
+[alias]
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[core]
+  editor = subl -wl1
+[push]
+  default = current
