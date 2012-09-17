@@ -11,4 +11,4 @@ cd ~/dev/bashmarks
 make install
 
 #echo "Configuring bashrc"
-echo "source ~/Dropbox/Scripts/bashrc_simple" >> ~/.bashr_profile
+echo "source ~/Dropbox/Scripts/bashrc_simple" >> ~/.bash_profile
