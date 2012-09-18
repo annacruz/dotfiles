@@ -4,7 +4,7 @@ Pry.config.editor = "subl -w"
 Pry.config.prompt = proc do |obj, level, _|
   prompt = ""
   prompt << "#{RUBY_VERSION}"
-  prompt << "#{Rails.version}@" if defined?(Rails)
+  prompt << "@#{Rails.version}" if defined?(Rails)
   "#{prompt} (#{obj})> "
 end
 
@@ -25,3 +25,7 @@ begin
 rescue LoadError => err
    warn "=> Unable to load awesome_print"
 end
+Pry.commands.alias_command 'c', 'continue'
+Pry.commands.alias_command 's', 'step'
+Pry.commands.alias_command 'n', 'next'
+Pry.commands.alias_command 'f', 'finish'
